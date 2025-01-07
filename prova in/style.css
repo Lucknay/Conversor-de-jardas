@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+
+    --primary: #2E8B57;
+    --font_color: #FBFAF8;
+    --second_font_color: #256D1B;
+    --font_primary: "Roboto Condensed", serif;
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.texto {
+    font-family: var(--font_primary);
+    text-align: center;
+    font-size: 3em;
+    color:  var(--font_color);
+    margin-bottom: 20px;
+}
+
+.solicitar {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 15px;
+    background-color: whitesmoke;
+    width: 40vw;
+    max-width: 500px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.solicitar label {
+    font-size: 1.1em;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.solicitar input, .solicitar select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.solicitar button {
+    padding: 12px 25px;
+    background-color: #8FBC8F;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.solicitar button:hover {
+    background-color: #2E8B57;
+}
+
+.resultado {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40vw;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--font_color);
+    border: 1px solid #ccc;
+}
+
+.resultado p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--second_font_color); 
+}
